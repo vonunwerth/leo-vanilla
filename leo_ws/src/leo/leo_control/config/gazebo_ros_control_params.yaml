@@ -1,0 +1,19 @@
+/gazebo_ros_control/pid_gains:
+  wheel_FL_link:
+    p: 1.0
+    i: 0.01 
+    d: 1.0
+  wheel_FR_link:
+    p: 1.0
+    i: 0.01 
+    d: 1.0
+  wheel_RL_link:
+    p: 1.0
+    i: 0.01 
+    d: 1.0
+  wheel_RR_link:
+    p: 1.0
+    i: 0.01 
+    d: 10
+   
+   
