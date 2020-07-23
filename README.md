@@ -2,7 +2,7 @@
 
 1. Clone
 ```
-git clone https://fsmuggler@bitbucket.org/marsrover-framework/leo-vanilla.git
+git clone https://github.com/PUT-UGV-Team/leo-vanilla.git
 ```
 2. Remove /build, /devel and /logs folders if they still exist
 ```
