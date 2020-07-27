@@ -195,9 +195,48 @@
 
   <link name="camera_frame"/>
 
-  <!-- JOINTS -->
+  <!-- TRANSMISSION -->
 
-  
+  <transmission name="wheel_FL_trans" type="SimpleTransmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <actuator name="wheel_FL_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+    <joint name="wheel_FL_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+  </transmission>
+
+  <transmission name="wheel_RL_trans" type="SimpleTransmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <actuator name="wheel_RL_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+    <joint name="wheel_RL_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+  </transmission>
+
+  <transmission name="wheel_FR_trans" type="SimpleTransmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <actuator name="wheel_FR_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+    <joint name="wheel_FR_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+  </transmission>
+
+  <transmission name="wheel_RR_trans" type="SimpleTransmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <actuator name="wheel_RR_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+    <joint name="wheel_RR_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+  </transmission>
+  <!-- TRANSMISSION -->
 
   <!-- Added gazebo_ros control -->
   <gazebo>

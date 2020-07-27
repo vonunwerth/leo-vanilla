@@ -41,4 +41,8 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     <!-- TODO: add possible arguments for depth camera, etc.-->
   </include>
 
+<include file="$(find leo_control)/launch/control.launch">
+    <!-- TODO: add possible arguments for depth camera, etc.-->
+  </include>
+
 </launch>

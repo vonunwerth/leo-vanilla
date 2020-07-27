@@ -1,37 +1,19 @@
 <?xml version="1.0"?>
 <launch>
 
-  <!--<arg name="robot_namespace" default="/"/>-->
-  <!--<arg name="robot_namespace" default="$(optenv ROBOT_NAMESPACE robot)"/>-->
-
   <arg name="use_tf_static" default="false"/>
 
-  <!-- Load robot description -->
-  <!-- <include file="$(find leo_description)/launch/description.launch" >
-  </include> -->
-  <param name="robot_description" command="$(find xacro)/xacro '$(find leo_description)/urdf/new.urdf.xacro'" />s
+  <arg name="model" default="$(find leo_description)/urdf/new.urdf.xacro"/>
 
   <!-- Load controller configuration -->
   <rosparam command="load" file="$(find leo_control)/config/control.yaml" />
 
-  <!-- Spawn controllers -->
-  <node name="base_controller_spawner"  pkg="controller_manager" type="spawner"
-        args="leo_joint_publisher leo_velocity_controller"/>
+  <node name="controller_spawner" pkg="controller_manager" type="spawner"
+    respawn="false" args="leo_velocity_controller leo_joint_publisher" output="screen" ns="leo"/>
 
-  <node pkg="interactive_marker_twist_server" type="marker_server" name="twist_marker_server" output="screen"/>
-
-   <!-- Start Joint state publisher node which will publish the joint values -->
-  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
-    <param name="use_tf_static" value="$(arg use_tf_static)"/>
-  </node>
-
-  <node name="robot_state_publisher"  pkg="robot_state_publisher" type="robot_state_publisher" >
-    <param name="use_tf_static" value="$(arg use_tf_static)"/>
-  </node>
-
-  <node pkg="twist_mux" type="twist_mux" name="twist_mux" >
+  <!--node pkg="twist_mux" type="twist_mux" name="twist_mux" >
     <rosparam command="load" file="$(find leo_control)/config/twist_mux.yaml" />
     <remap from="cmd_vel_out" to="leo_velocity_controller/cmd_vel"/>
-  </node>
+  </node-->
  
 </launch>

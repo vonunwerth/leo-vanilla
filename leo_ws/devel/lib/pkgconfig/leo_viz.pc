@@ -1,0 +1,8 @@
+prefix=/home/krzysztof/University/ERC2020/DEPLOY1/leo-vanilla/leo_ws/devel
+
+Name: leo_viz
+Description: Description of leo_viz
+Version: 0.2.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
