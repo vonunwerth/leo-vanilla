@@ -1,2 +1,2 @@
-leo/leo_bringup:leo/leo_control:leo/leo_description:leo/leo_gazebo:leo/leo_joy_example:leo/leo_navigation:leo/leo_viz
+leo/leo_control:leo/leo_description:leo/leo_gazebo:leo/leo_joy_example:leo/leo_viz
 -DCATKIN_DEVEL_PREFIX=/home/krzysztof/University/ERC2020/DEPLOY1/leo-vanilla/leo_ws/devel -DCMAKE_INSTALL_PREFIX=/home/krzysztof/University/ERC2020/DEPLOY1/leo-vanilla/leo_ws/install -G Unix Makefiles

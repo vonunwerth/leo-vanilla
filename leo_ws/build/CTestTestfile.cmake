@@ -5,10 +5,8 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
-subdirs("leo/leo_bringup")
 subdirs("leo/leo_description")
 subdirs("leo/leo_joy_example")
-subdirs("leo/leo_navigation")
 subdirs("leo/leo_viz")
 subdirs("leo/leo_control")
 subdirs("leo/leo_gazebo")
