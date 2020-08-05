@@ -2,18 +2,18 @@
 
 ## Setup
 
-1. Clone
+1. Create new ROS workspace
 ```
+mkdir -p ~/leo_ws/src
+```
+2. Clone
+```
+cd ~/leo_ws/src
 git clone https://github.com/PUT-UGV-Team/leo-vanilla.git
 ```
-2. Remove /build, /devel and /logs folders if they still exist
+3. Build
 ```
-cd leo_vanilla
-cd leo_ws
-rm -rf build devel logs
-```
-3. Build workspace
-```
+cd ..
 catkin_make
 ```
 4. Source workspace
