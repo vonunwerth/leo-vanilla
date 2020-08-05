@@ -1,4 +1,6 @@
-# Leo Rover Vanilla #
+# Leo Rover Vanilla
+
+## Setup
 
 1. Clone
 ```
@@ -27,3 +29,20 @@ roslaunch leo_gazebo leo_empty_world.launch
 roslaunch leo_viz rviz.launch
 ```
 
+## Topics
+
+Set velocity (message type: [cmd_vel](http://docs.ros.org/melodic/api/geometry_msgs/html/msg/Twist.html))
+* /leo/leo_velocity_controller/cmd_vel
+
+Odometry information:
+* /leo/leo_velocity_controller/odom
+
+Leo robot parameters and updates:
+* /leo/leo_velocity_controller/parameter_descriptions
+* /leo/leo_velocity_controller/parameter_updates
+
+
+## Dependencies
+
+* [Ubuntu 18.04](https://releases.ubuntu.com/18.04)
+* [ROS Melodic Morenia](http://wiki.ros.org/melodic/Installation/Ubuntu)
