@@ -1,8 +1,0 @@
-prefix=/home/krzysztof/University/ERC2020/DEPLOY1/leo-vanilla/leo_ws/devel
-
-Name: leo_bringup
-Description: Description of leo_bringup
-Version: 1.0.1
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
