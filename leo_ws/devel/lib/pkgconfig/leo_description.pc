@@ -1,8 +1,0 @@
-prefix=/home/krzysztof/University/ERC2020/DEPLOY1/leo-vanilla/leo_ws/devel
-
-Name: leo_description
-Description: Description of leo_description
-Version: 0.3.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
