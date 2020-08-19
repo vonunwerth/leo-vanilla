@@ -105,7 +105,7 @@
   </xacro:if>
 
   <joint name="camera_joint" type="fixed">
-      <origin xyz="0.0971 0 -0.0427" rpy="${-pi/2 - 0.2094} 0 ${-pi/2}"/>
+      <origin xyz="0 0 0.2" rpy="0 0.7 0"/>
       <parent link="base_link"/>
       <child link="camera_frame"/>
   </joint>

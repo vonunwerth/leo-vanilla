@@ -1,3 +1,9 @@
+# Team ORTHOS Comments
+
+Simulation uses new.urdf.xacro file
+
+RVIZ: Robot Model --> robot description: leo/robot_description NOT just robot_description
+
 # Leo Rover Vanilla
 
 ## Setup
